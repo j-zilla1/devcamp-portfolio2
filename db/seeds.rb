@@ -33,7 +33,7 @@ puts "5 skills created"
     )
 end
 
-puts "9 portfolio items created"
+
 
 1.times do |portfolio_item|
   Portfolio.create!(
@@ -43,4 +43,13 @@ puts "9 portfolio items created"
     main_image: "http://placehold.it/600x400",
     thumb_image: "http://placehold.it/350x200"
     )
+  end
+puts "9 portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+    )
+    
+puts "3 technology items created"
 end
