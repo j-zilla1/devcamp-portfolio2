@@ -57,7 +57,7 @@ def destroy
       format.html { redirect_to portfolios_url, notice: 'Post was removed.' }
     end
 end
-
+  
 
 
 end
