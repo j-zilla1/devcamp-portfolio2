@@ -5,7 +5,7 @@ layout "blog"
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.special_blogs
     @page_title = 'My Portfolio Blog'
   end
 
@@ -45,7 +45,7 @@ layout "blog"
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Post was successfully updated!' }
- 
+
       else
         format.html { render :edit }
       end
@@ -68,8 +68,8 @@ def toggle_status
   elsif  @blog.published?
     @blog.draft!
   end
-    
-  
+
+
   redirect_to blogs_url, notice: 'Post status has been updated.'
 end
 
