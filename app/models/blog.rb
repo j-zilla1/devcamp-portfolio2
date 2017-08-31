@@ -10,7 +10,4 @@ class Blog < ApplicationRecord
   def self.special_blogs
     all
   end
-  def self.featured_blogs
-    all
-  end
 end
