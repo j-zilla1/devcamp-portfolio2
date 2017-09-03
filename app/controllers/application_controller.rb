@@ -4,19 +4,5 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-
-  before_action :set_copyright
-
-def set_copyright
-  @copyright = MotonViewTool::Renderer.copyright 'Jessica Moton', 'All rights reserved'
-  end
 end
 
-
-module MotonViewTool
-  class Renderer
-    def self.copyright name, msg
-      "&copy: #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
-    end
-  end
-end
