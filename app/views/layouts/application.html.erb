@@ -7,34 +7,27 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
-     <meta name="keywords" content="<%= @seo_keywords %>" />
-
+    <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-     <div class="site-wrapper">
-
+    <div class="site-wrapper">
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
 
-           <%= render "shared/application_nav" %>
+          <%= render "shared/application_nav" %>
 
-           <%= login_helper%>
+          <%= yield %>
 
-           <%= yield %>
+          <%= render "shared/application_footer" %>
 
-           <%= copyright_generator %>
+          <%= source_helper("application") %>
 
-           <%= source_helper("application") %>
-           </div>
-
+        </div>
       </div>
-
     </div>
-
   </body>
 </html>
