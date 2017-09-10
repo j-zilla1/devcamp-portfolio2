@@ -1,9 +1,54 @@
-<h1>Pages#contact</h1>
+<h1>Let's learn together!</h1>
+<style>#myDIV {
+      colo: yellow;
+      padding: 100px;
+      position: center;
+      margin-top: -100px;
+      margin-bottom:30px;
+    }
+  </style>
+</head>
 
-<p>Contact me at: <%= number_to_phone "55555555555" %></p>
+<body>
+  <button onclick="myFunction1()"><img src="https://cdn.pixabay.com/photo/2016/11/01/03/05/contact-1787332__340.png" alt="telephone_icon" style="width:60px;height:40px;"></button>
+  <button onclick="myFunction2()"><img src="https://cdn.pixabay.com/photo/2016/09/24/09/28/icon-1691393__340.png" alt="email_icon" style="width:60px;height:40px;"></button>
+  <button onclick="myFunction3()"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757__340.png" alt="github_icon" style="width:60px;height:40px;"></button>
+</body>
+  <div id="myDIV1">
+    <p><%= number_to_phone "678-357-2447" %></p>
+  </div>
+  <div id="myDIV2">
+    <p><a href="mailto:moton159@gmail.com?subjec=PortfolioContact" "email me">Email me</a></p>
+    </div>
+    <div id="myDIV3">
+    <a href =https://github.com/j-zilla1>Don't forget to fork me!</a>
+  </div>
+  <script>
+    function myFunction1() {
+      var x = document.getElementById("myDIV1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
 
-<p><%= number_to_currency "300" %></p>
-
-<p><%= number_to_percentage "99.9" %></p>
-
-<p><%= number_with_delimiter "8473879287347" %></p>
+     function myFunction2() {
+      var x = document.getElementById("myDIV2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } function myFunction3() {
+      var x = document.getElementById("myDIV3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+<div class ="col-md-6">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.8233032469093!2d-104.8794549!3d39.653690999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c87979c3d9047%3A0xb75a8dbf625170a2!2s9120+E+Girard+Ave%2C+Denver%2C+CO+80231!5e0!3m2!1sen!2sus!4v1505005939427" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>

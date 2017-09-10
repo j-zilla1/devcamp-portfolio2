@@ -117,6 +117,9 @@ body {
   font-weight: bold;
 }
 
+.lead {
+ color: rgba(255,0,0,1);
+}
 
 /*
  * Footer
@@ -131,7 +134,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 40em) {
+@me/dia (min-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -159,4 +162,21 @@ body {
   .cover-container {
     width: 55rem;
   }
+}
+
+/*
+custom styles
+*/
+
+.about-background{
+  background-color: gray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
 }
