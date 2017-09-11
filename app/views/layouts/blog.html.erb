@@ -15,17 +15,7 @@
   <body>
 
 
-  <div class="blog-masthead">
-    <div class="container">
-      <nav class="nav blog-nav">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Contact Me</a>
-        <a class="nav-link" href="#">New hires</a>
-        <a class="nav-link" href="#">About</a>
-      </nav>
-    </div>
-  </div>
+  <%= render 'shared/blog_nav' %>
 
   <div class="blog-header">
     <div class="container">
@@ -33,13 +23,14 @@
       <p class="lead blog-description">An example blog template built with Bootstrap.</p>
     </div>
   </div>
+  <!-- end of blog header -->
 
-
+  <!-- start of container and row element -->
   <div class="container">
 
     <div class="row">
-
-  <%= login_helper %>
+<!-- end of container and row element -->
+  
 
       <%= yield %>
 <!-- start of sidebar-->
