@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def login_helper style
+  def login_helper style =' '
      if current_user.is_a?(GuestUser)
       (link_to "Register", new_user_registration_path, class: style) +
       " ".html_safe +
@@ -13,8 +13,8 @@ module ApplicationHelper
     if session[:source]
       greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
       content_tag(:p, greeting, class: "source-greeting")
-    end
   end
+end
 
   def copyright_generator
     MotonViewTool::Renderer.copyright 'Jessica Moton', 'All rights reserved'
