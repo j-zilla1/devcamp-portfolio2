@@ -1,53 +1,28 @@
-<h1>Let's learn together!</h1>
-<style>#myDIV {
-      colo: yellow;
-      padding: 100px;
-      position: center;
-      margin-top: -100px;
-      margin-bottom:30px;
-    }
-  </style>
-</head>
+<h1>Connect with me</h1>
 
 <body>
-  <button onclick="myFunction1()"><img src="https://cdn.pixabay.com/photo/2016/11/01/03/05/contact-1787332__340.png" alt="telephone_icon" style="width:60px;height:40px;"></button>
-  <button onclick="myFunction2()"><img src="https://cdn.pixabay.com/photo/2016/09/24/09/28/icon-1691393__340.png" alt="email_icon" style="width:60px;height:40px;"></button>
-  <button onclick="myFunction3()"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757__340.png" alt="github_icon" style="width:60px;height:40px;"></button>
-</body>
-  <div id="myDIV1">
-    <p><%= number_to_phone "678-357-2447" %></p>
-  </div>
-  <div id="myDIV2">
-    <p><a href="mailto:moton159@gmail.com?subjec=PortfolioContact" "email me">Email me</a></p>
-    </div>
-    <div id="myDIV3">
-    <a href =https://github.com/j-zilla1>Don't forget to fork me!</a>
-  </div>
-  <script>
-    function myFunction1() {
-      var x = document.getElementById("myDIV1");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
+<p id="phone">  <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhprm5yt24Ygan4QayzIK3FYln4lskd3KUmNn4YjZW7rx5ubZ" width  = "50"  height = "50"></p>
+<p id="email">  <input type="image" src="https://image.freepik.com/free-icon/email-envelope-outline-shape-with-rounded-corners_318-49938.jpg" width = "50"  height = "50"></p>
+<p id="github"> <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6PLlz7GdEBnWwpWYDe-SapqI7D0CC3cC2y6J5wdTo-Mqnssr52A" width  = "50"  height = "50"></p>
 
-     function myFunction2() {
-      var x = document.getElementById("myDIV2");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    } function myFunction3() {
-      var x = document.getElementById("myDIV3");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
+<script>
+  document.getElementById("phone").addEventListener("click", myFunction);function myFunction() {
+  document.getElementById("phone").innerHTML = "555-555-5555"
+}
+
+</script>
+
+<script>
+  document.getElementById("email").addEventListener("click", myFunction);function myFunction() {
+  document.getElementById("email").innerHTML = "moton159@gmail.com";
+}
+</script>
+
+<script>
+  document.getElementById("github").addEventListener("click", myFunction);function myFunction() {
+  document.getElementById("github").innerHTML = "https://github.com/j-zilla1";
+}
+</script>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.466715606209!2d-84.20203298527423!3d33.90338578064676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a69642fa8b75%3A0x41f236d8eb32aa1!2sCafe+J!5e0!3m2!1sen!2sus!4v1505023974845" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+</body>
