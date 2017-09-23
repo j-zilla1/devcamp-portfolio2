@@ -1,27 +1,41 @@
 
 <body>
-  <div>
-<p id="phone">  <input style="display: inline; " type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhprm5yt24Ygan4QayzIK3FYln4lskd3KUmNn4YjZW7rx5ubZ" width  = "50"  height = "50"></p>
-<p id="email">  <input style="display: inline; "type="image" src="https://image.freepik.com/free-icon/email-envelope-outline-shape-with-rounded-corners_318-49938.jpg" width = "50"  height = "50"></p>
-<p id="github"> <input style="display: inline;"type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6PLlz7GdEBnWwpWYDe-SapqI7D0CC3cC2y6J5wdTo-Mqnssr52A" width  = "50"  height = "50"></p>
-</div>
+
+<p id="phone">  <input style="display: inline; "type ="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhprm5yt24Ygan4QayzIK3FYln4lskd3KUmNn4YjZW7rx5ubZ" width  = "50"  height = "50"></p>
+<p id="email">  <input style="display: inline; "type ="image" src="https://image.freepik.com/free-icon/email-envelope-outline-shape-with-rounded-corners_318-49938.jpg" width = "50"  height = "50"></p>
+<p id="github"> <input style="display: inline; "type ="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6PLlz7GdEBnWwpWYDe-SapqI7D0CC3cC2y6J5wdTo-Mqnssr52A" width  = "50"  height = "50"></p>
+
 
 
 <script>
-  document.getElementById("phone").addEventListener("click", myFunction);function myFunction() {
-  document.getElementById("phone").innerHTML = "555-555-5555"
-}
+  var toggleTracker = true;
 
+  document.getElementById("phone").addEventListener("click", togglePhone);
+  function togglePhone(){
+    toggleTracker = !toggleTracker;
+    if (toggleTracker = true) showPhone();
+    else hidePhone('<input style="image" value="text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhprm5yt24Ygan4QayzIK3FYln4lskd3KUmNn4YjZW7rx5ubZ" width  = "50"  height = "50">');
+  }
+
+  function showPhone() {
+  document.getElementById("phone").outerHTML = "555-555-5555";
+
+
+function hidePhone()
+{ document.getElementById("phone").outerHTML =
+  '<input style="image" value="text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhprm5yt24Ygan4QayzIK3FYln4lskd3KUmNn4YjZW7rx5ubZ" width  = "50"  height = "50">';
+  }
+}
 </script>
 
 <script>
-  document.getElementById("email").addEventListener("click", myFunction);function myFunction() {
+  document.getElementById("email").addEventListener("click", emailFunction);function emailFunction() {
   document.getElementById("email").innerHTML = "moton159@gmail.com";
 }
 </script>
 
 <script>
-  document.getElementById("github").addEventListener("click", myFunction);function myFunction() {
+  document.getElementById("github").addEventListener("click", gitFunction);function gitFunction() {
   document.getElementById("github").innerHTML = "https://github.com/j-zilla1";
 }
 </script>
