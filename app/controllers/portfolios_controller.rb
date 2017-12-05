@@ -1,11 +1,11 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
  layout 'portfolio'
-access all: [:show, :index, :angular
-], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
+access all: [:show, :index, :angular],
+ user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
-  @portfolio_items = Portfolio.order("position ASC")
+
   end
 
   def sort
@@ -21,7 +21,7 @@ access all: [:show, :index, :angular
 
   def new
     @portfolio_item = Portfolio.new
-    3.times  {@portfolio_item.technologies.build}
+
  end
 
 def create
@@ -68,6 +68,8 @@ end
    params.require(:portfolio).permit(:title,
                                      :subtitle,
                                      :body,
+                                     :main_image,
+                                     :thumb_image,
                                       technologies_attributes:[:name]
                                     )
 end

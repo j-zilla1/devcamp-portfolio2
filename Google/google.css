@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    background-color:  yellow;
+}
+
+
+body{
+    font-family: arial;
+    color: #2d2d2d;
+}
+.navbarHeader{
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       text-align: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: inline;
+    padding: 10px;
+}
+.logo{
+
+    margin: auto;
+    padding-top: 109px;
+    display: block;
+}
+.searchBar {
+    width: 40%;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    float: right;
+    margin-right: 30%;
+    border-style: ridge;
+    border-color: #f1f1f1;
+    box-shadow: 0 10px 10px -10px #f2f2f2;
+    border-radius: 4.5px;
+    position: relative;
+}
+.btnPrimary{
+    border-radius: 2px;
+    float: left;
+    display: block-inline;
+    border: .5px solid #f2f2f2;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color:  #2d2d2d;
+    min-width: 54px;
+    margin: 30px 4px;
+    padding: 5px 16px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    margin-left:500px;
+    margin-right:-400px;
+
+
+}
+
+
+#btnSecondary{
+    background-color: #4885ed;
+    border: none;
+    color: white;
+    padding: 3px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    line-height 28px;
+}
+.navbarFooter{
+    font-size: small;
+    display: inline-block;
+    position: bottom;
+    float: left;
+    padding-left: 20px;
+}
+#right{
+    float:right;
+    padding-right: 900px;
+    position: bottom;
+}
+#border {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+
+}

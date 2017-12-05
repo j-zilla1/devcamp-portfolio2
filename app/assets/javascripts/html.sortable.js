@@ -1,4 +1,3 @@
-alert("hey there");
 
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -756,5 +755,5 @@ sortable.disable = function (sortableElement) {
   _disableSortable(sortableElement)
 }
 
-
 return sortable;
+}));
